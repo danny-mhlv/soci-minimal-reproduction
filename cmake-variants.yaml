@@ -1,0 +1,15 @@
+buildType:
+  default: debug-submods
+  description: With Submods
+  choices: 
+    debug-submods:
+      short: Debug Submods
+      long: Build with `git-submodules` and debugging information
+      buildType: Debug
+      settings:
+        WITH_BOOST: OFF
+        WITH_POSTGRESQL: ON
+        SOCI_SHARED: ON
+        SOCI_STATIC: OFF
+        SOCI_TESTS: OFF
+        POSTGRESQL_INCLUDE_DIR: /usr/include/postgresql
